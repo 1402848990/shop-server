@@ -1,10 +1,10 @@
 /**
- *  User 接口(注册，登录、工作计划、备忘录、通讯录等)
+ * 负责人相关接口
  */
 const router = require('koa-router')()
 const Sequelize = require('sequelize')
 const models = require('../autoScanModels')
-const { UserModel, ContactModel,NoteModel,PlanModel } = models
+const { ContactModel } = models
 const { mysqlCreate, userQuery, userQueryOne, userDelete } = require('../utils')
 
 const Op = Sequelize.Op

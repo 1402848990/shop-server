@@ -5,6 +5,7 @@ const router = require('koa-router')()
 const Sequelize = require('sequelize')
 const models = require('../autoScanModels')
 const { AssetModel } = models
+const axios  = require('axios')
 const { userQuery } = require('../utils')
 
 
