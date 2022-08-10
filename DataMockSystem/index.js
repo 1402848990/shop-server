@@ -85,7 +85,7 @@ async function dataWrite() {
         delete good.salesNum
         !isDiscount ? delete good.salePrice : null
         // 生成随机购买数量
-        const goodsNum = randomNum(0, (stock > 3 ? 3 : stock) || 1) || 1
+        const goodsNum = randomNum(0, (stock > 3 ? 3 : stock) || 1) || 1 
         console.log('goodsNum', goodsNum)
         const amount = goodsNum * (isDiscount ? salePrice : price) // 总金额
         const profit = ((isDiscount ? salePrice : price) - rootPrice) * goodsNum // 总利润
